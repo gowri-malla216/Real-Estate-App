@@ -1,12 +1,47 @@
-# Real-Estate-APP
-A full-stack real estate application that allows users to search, filter, and manage property listings, facilitating property management and transactions.
+# Rental Property Management Application
+A full-stack real estate web application built with Angular (Frontend) and .NET Core MVC (Backend). This application allows users to browse, filter, and manage real estate listings while ensuring a seamless user experience with secure authentication, cloud image storage, and database integration.
 
-Implemented CRUD operations for properties, users, and transactions using C# and ASP.NET Core, ensuring smooth back-end functionality.
+## Features
+- Property Listings – View, filter, and sort real estate properties
+- User Authentication – Secure login and registration system
+- Property Management – Add, update, and remove listings
+- Photo Upload & Editing – Cloudinary integration for image storage
+- Filter & Sorting – Search properties based on price, type, and other parameters
+- Responsive UI – Optimized for desktop & mobile devices
+- API-Driven Architecture – Seamless interaction between frontend & backend
 
-Designed and built responsive front-end interfaces using Angular to provide a seamless user experience across devices.
+## Tech Stack
+### Frontend – Angular
+- Components: Navbar, Add-Property, Property-List, Property-Detail, Property-Card, Photo-Editor
+- Services: Alertify, Auth, Housing, User Login/Register
+- State Management: Environment-based configurations (development & production)
+- Data Handling: Properties stored in properties.json
+- Filtering & Sorting: Custom Angular Pipes
+### Backend – .NET Core MVC
+- Database: MSSQL Database with Entity Framework Core
+- Cloud Storage: Cloudinary for managing property images
+- Security: Authentication & Authorization
 
-Integrated RESTful APIs for data communication between the front-end (Angular) and back-end (ASP.NET Core).
+## Setup & Installation
+### Prerequisites
+- Node.js & Angular CLI installed
+- .NET SDK installed
+- MSSQL 
+- Cloudinary Account for image storage
 
-Utilized Entity Framework Core to handle database interactions and SQL Server to store property listings, user data, and transaction records.
+### Frontend Setup (Angular)
+```
+cd Frontend
+npm install
+ng serve
+```
+#### visit: http://localhost:your-angular-port/ 
 
-Implemented user authentication and authorization using ASP.NET Identity, enhancing data security and access control.
+### Backend Setup (.NET Core API)
+```
+cd Backend
+dotnet restore
+dotnet run
+```
+#### API Runs on: https://localhost:5001/api
+
